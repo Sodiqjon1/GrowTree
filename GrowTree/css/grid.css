@@ -1,0 +1,29 @@
+:root{
+ --grid-width: 1140px;
+ --grid-gutter: .5em;
+}
+.container{
+  max-width: var(--grid-width);
+  min-width: 320px;
+  margin: auto;
+}
+.row{
+  display: flex;
+}
+.col{
+  width: fit-content;
+  padding: 0 var(--grid-gutter);
+}
+.col--lead{
+  flex: 1;
+}
+.col--center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col--right{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
